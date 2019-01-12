@@ -65,4 +65,50 @@ Note: file is delted from local git and remote git repo but file exist in your l
 you can delete it from you file system
 ```
 
+#### Git discard all local changes which are not staged yet
+```
+Option1
+git stash (It will discard all local changes but it stores changes to temrory file which can later be restored)
 
+
+git stash list (lists all previously stashed commits (yes, there can be more) that were not poped
+git stash pop (redoes previously stashed changes and removes them from stashed list
+git stash apply(redoes previously stashed changes, but keeps them on stashed
+
+
+Option2
+
+git checkout -- <file>  (It will permanently remove local changes)
+  
+  
+
+```
+
+#### How to unstage everything but keep changes (Not commited yet)
+ ```git reset (This will remove changes from staging)```
+
+#### How to unstage everything dont keep changes (Not commited yet)
+ ```git reset --hard FILE_NAME (This will remove changes from staging)```
+
+#### Unstage the file to current commit (HEAD)
+ ```git reset HEAD FILE_NAME (This will remove changes from staging also we can say it will bring file to current commit condition)```
+
+#### How to discard all local changes, but save them for later (Not staged yet)
+```  git stash ```
+
+#### How to revert recently commit changes
+```  
+    git reset --hard HEAD~1 (It will set your file to previous commit) 
+
+    alternativly
+    
+    git reset --hard COMMIT_ID
+    
+```
+
+#### View all commit history
+
+```
+ git log
+
+```
