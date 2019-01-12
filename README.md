@@ -57,12 +57,14 @@ git push origin feature_branch
 ```  git remote rm origin ```
  
 #### Git remove fie
-``` git rm -r --cached FILE_NAME (It will remove file from git repo )
+``` 
+    git rm -r --cached FILE_NAME (It will remove file from git repo )
     git commit 
     git push  (After psuh file will be deleted from remote branch)
     
-Note: file is delted from local git and remote git repo but file exist in your local directory but it is no longer of your git repo 
-you can delete it from you file system
+Note: file is delted from local git and remote git repo but file exist in your local directory but it is 
+no longer of your git repo you can delete it from you file system
+
 ```
 
 #### Git discard all local changes which are not staged yet
