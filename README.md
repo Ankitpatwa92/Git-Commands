@@ -1,15 +1,5 @@
 # Git Important Commands
 
-#### How to get current user
-``` git config user.name ```
-
-#### How to get remote url for a repo
-``` 
-go to repository and hit below command
-git config --get remote.origin.url 
-
-```
-
 #### How to take checkout in git
 ``` git clone REPO_URL ```
 
@@ -28,11 +18,19 @@ git push origin master  (Push commited changes to remote repo)
 git push origin feature_branch
 ```
 
+#### How to get current user
+``` git config user.name ```
+
+#### How to get remote url for a repo
+Go to repository and hit below command
+```git config --get remote.origin.url
+```
+
 #### Show current branch Git
 ``` git branch ```
 
 #### Create git branch 
-``` git branch BRANCH_NAME```
+``` git branch -b BRANCH_NAME```
 
 #### Switch to another branch
 ``` git checkout BRANCH_NAME```
@@ -46,9 +44,8 @@ git push origin feature_branch
 #### Add changes in current repo
 ``` git stage . (dot will added all changed file,specific file name can be used ) ```
 
-
 #### Git clone specific branch only 
-```  git cline CLONE_URL BRANCH_NAME  ```
+``` git clone CLONE_URL BRANCH_NAME  ```
 
 #### Checkout master branch
 ``` git checkout master ```
@@ -68,24 +65,15 @@ no longer of your git repo you can delete it from you file system
 ```
 
 #### Git discard all local changes which are not staged yet
-```
-Option1
-git stash (It will discard all local changes but it stores changes to temrory file which can later be restored)
+*Option1
+```git stash ``` (It will discard all local changes but it stores changes to temrory file which can later be restored)
+```git stash list ``` (lists all previously stashed commits (yes, there can be more) that were not poped
+```git stash pop ``` (redoes previously stashed changes and removes them from stashed list
+``` git stash apply ```(redoes previously stashed changes, but keeps them on stashed
 
-
-git stash list (lists all previously stashed commits (yes, there can be more) that were not poped
-git stash pop (redoes previously stashed changes and removes them from stashed list
-git stash apply(redoes previously stashed changes, but keeps them on stashed
-
-
-Option2
-
-git checkout -- <file>  (It will permanently remove local changes)
+*Option2
+```git checkout -- <file>  (It will permanently remove local changes)```
   
-  
-
-```
-
 #### How to unstage everything but keep changes (Not commited yet)
  ```git reset (This will remove changes from staging)```
 
@@ -99,15 +87,12 @@ git checkout -- <file>  (It will permanently remove local changes)
 ```  git stash ```
 
 #### How to revert recently commit changes
-```  
-    git reset --hard HEAD~1 (It will set your file to previous commit) 
+```git reset --hard HEAD~1 (It will set your file to previous commit) 
 
     alternativly
     
-    git reset --hard COMMIT_ID
-    
-```
-
+    git reset --hard COMMIT_ID 
+```    
 #### View all commit history
 
 ```
