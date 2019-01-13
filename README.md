@@ -3,13 +3,11 @@
 #### How to take checkout in git
 ``` 
 git clone REPO_URL 
-
 ```
 
 #### List out all branches 
 ```  
 git branch -l 
-
 ```
 
 #### Start new repo locally
@@ -21,19 +19,18 @@ git commit -m "initial commit"   (This command will commit code locally)
 git remote add origin remote_repo_url (connect local repo to remote repo)
 git push origin master  (Push commited changes to remote repo)
 git push origin feature_branch
-
 ```
 
 #### How to get current user
 ``` 
 git config user.name 
-
 ```
 
 #### How to get remote url for a repo
 Go to repository and hit below command
-``` git config --get remote.origin.url ```
-
+``` 
+git config --get remote.origin.url 
+```
 
 #### Show current branch Git
 ``` git branch ```
