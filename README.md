@@ -32,7 +32,7 @@ Go to repository and hit below command
 git config --get remote.origin.url 
 ```
 
-#### Show current branch Git
+#### Show current branch
 ``` 
 git branch 
 ```
@@ -43,21 +43,25 @@ git branch -b BRANCH_NAME
 ```
 
 #### Switch to another branch
-```git checkout BRANCH_NAME
+```
+git checkout BRANCH_NAME
 ```
 
 #### Show current changes in files
-```git status
+```
+git status
 ```
 
 #### Add new file in repo
+dot will add new file in current dir
 ```
-git add FILE_NAME or  . (dot will all new file in current dir)
+git add FILE_NAME or  . 
 ```
 
 #### Add changes in current repo
+dot will add all changed file,specific file name can be used 
 ```
-git stage . (dot will added all changed file,specific file name can be used )
+git stage . 
 ```
 
 #### Git clone specific branch only 
@@ -86,10 +90,11 @@ no longer of your git repo you can delete it from you file system
 
 
 #### Discard all local changes which are not staged yet
+It will discard all local changes but it stores changes to temrory file which can later be restored
 ```
 git stash 
 ```
-(It will discard all local changes but it stores changes to temrory file which can later be restored)
+
 
 ### Permanently discard local changes
 ```
@@ -97,10 +102,11 @@ git checkout -- <file>  (It will permanently remove local changes)
 ```
 
 #### Show stashed changes list
+Lists all previously stashed commits (yes, there can be more) that were not poped
 ```
 git stash list 
 ``` 
-(lists all previously stashed commits (yes, there can be more) that were not poped
+
 
 #### Redoes previously stashed changes and removes them from stashed list
 ```
