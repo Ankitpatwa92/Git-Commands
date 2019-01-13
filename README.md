@@ -1,30 +1,39 @@
 # Git Important Commands
 
 #### How to take checkout in git
-``` git clone REPO_URL ```
+``` 
+git clone REPO_URL 
+
+```
 
 #### List out all branches 
-```  git branch -l ```
+```  
+git branch -l 
+
+```
 
 #### Start new repo locally
+go to repo folder
 ``` 
-go to folder
-
 git init
 git add .   (here . dot means all files in directory you can specify special files)
 git commit -m "initial commit"   (This command will commit code locally)
 git remote add origin remote_repo_url (connect local repo to remote repo)
 git push origin master  (Push commited changes to remote repo)
 git push origin feature_branch
+
 ```
 
 #### How to get current user
-``` git config user.name ```
+``` 
+git config user.name 
+
+```
 
 #### How to get remote url for a repo
 Go to repository and hit below command
-```git config --get remote.origin.url
-```
+``` git config --get remote.origin.url ```
+
 
 #### Show current branch Git
 ``` git branch ```
@@ -65,13 +74,13 @@ no longer of your git repo you can delete it from you file system
 ```
 
 #### Git discard all local changes which are not staged yet
-*Option1
+* Option1
 ```git stash ``` (It will discard all local changes but it stores changes to temrory file which can later be restored)
 ```git stash list ``` (lists all previously stashed commits (yes, there can be more) that were not poped
 ```git stash pop ``` (redoes previously stashed changes and removes them from stashed list
 ``` git stash apply ```(redoes previously stashed changes, but keeps them on stashed
 
-*Option2
+* Option2
 ```git checkout -- <file>  (It will permanently remove local changes)```
   
 #### How to unstage everything but keep changes (Not commited yet)
@@ -95,7 +104,6 @@ no longer of your git repo you can delete it from you file system
 ```    
 #### View all commit history
 
-```
- git log
+```git log```
 
-```
+
