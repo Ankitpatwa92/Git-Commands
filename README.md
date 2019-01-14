@@ -149,3 +149,16 @@ git reset --hard COMMIT_ID
 ```
 git log
 ```
+
+#### How to delete branch at localy and remotely
+```
+git branch -d BRANCH_NAME
+
+git push <remote_name> --delete <branch_name>
+```
+
+#### Create branch and take checkout from feature branch
+```
+git checkout -b FEATURE_BRANCH_1 FEATURE_BRANCH_2
+```
+
