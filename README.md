@@ -162,3 +162,9 @@ git push <remote_name> --delete <branch_name>
 git checkout -b FEATURE_BRANCH_1 FEATURE_BRANCH_2
 ```
 
+#### How to create tag in Git
+```
+git tag -a v1.4 -m "my version 1.4"
+git push origin v1.4
+```
+
