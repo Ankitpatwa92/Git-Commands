@@ -172,3 +172,11 @@ git push origin v1.4
 git pull origin master --allow-unrelated-histories
 
 ```
+
+### Difference between git pull and fetch
+
+```
+git fetch will bring metadata from remote branch it will not transfer any file it just update if there is any commit on remote branch
+
+git pull will actually pull data and merge them with local branch
+```
