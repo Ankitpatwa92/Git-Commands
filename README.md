@@ -180,3 +180,11 @@ git fetch will bring metadata from remote branch it will not transfer any file i
 
 git pull will actually pull data and merge them with local branch
 ```
+
+### Git Branch
+```
+git branch -l (local)
+
+git branch -r (Remote)
+
+```
